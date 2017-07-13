@@ -1,0 +1,17 @@
+<plugin name="Image Save Plugin">
+	<directory>
+		image_save_plugin
+	</directory>
+	<version>
+		2017.07.11
+	</version>
+	<author>
+		Kevin Tarhan
+	</author>
+	<url>
+		https://github.com/flika-org/image_save_plugin/archive/master.zip
+	</url>
+	<menu_layout>
+		<action location="image_save" function="SaveImage.save">Save</action>
+	</menu_layout>
+</plugin>

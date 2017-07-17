@@ -16,9 +16,17 @@ class SaveImage(BaseProcess):
         super().__init__()
 
     def save(self):
+        '''Save image of current window to an already saved location or ask for a specified location if none exists.
+
+        If there is no current window, then simply create one::
+
+            generate_random_image(500,128)
+
+        '''
         if g.currentWindow is None:
             generate_random_image(500, 128)
-        save_file()
+        save_file(g.settings['filename'])
+
 
 Image_to_save = SaveImage()
 

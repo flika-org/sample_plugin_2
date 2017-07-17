@@ -25,8 +25,7 @@ class SaveImage(BaseProcess):
         '''
         if g.currentWindow is None:
             generate_random_image(500, 128)
-        save_file(g.settings['filename'])
-
+        save_file()
 
 Image_to_save = SaveImage()
 
